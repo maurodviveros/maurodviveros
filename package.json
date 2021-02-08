@@ -1,0 +1,19 @@
+{
+  "name": "maurodviveros_github-profile",
+  "description": "Repositorio de perfil de Github",
+  "author": "Mauro Daniel Viveros <maurod.viveros@gmail.com> (TRY Ubbe)",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maurodviveros/maurodviveros.git"
+  },
+  "scripts": {
+    "version": "git add .",
+    "postversion": "git push origin master && git push origin --tags",
+    "patch": "changelog -p && npm version patch -f",
+    "minor": "changelog -m && npm version minor -f",
+    "major": "changelog -M && npm version major -f",
+    "pull": "git pull origin master && git pull origin --tags"
+  }
+}
